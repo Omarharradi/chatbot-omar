@@ -1,132 +1,210 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hello",
-          "How are you?",
-          "Good day",
-          "Hey"
-        ],
-        "responses": [
-          "Hello! Let me introduce you to Omar Harradi. How can I assist you in learning more about his experience?",
-          "Hi there! Omar Harradi is a passionate data scientist. What would you like to know about him?",
-          "Greetings! I'm here to talk about Omar Harradi's journey in data science. How can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "Bye",
-          "Goodbye",
-          "See you later",
-          "Catch you later"
-        ],
-        "responses": [
-          "Goodbye! Feel free to reach out if you have more questions about Omar Harradi's experience.",
-          "See you later! Don't hesitate to learn more about Omar's skills and projects.",
-          "Goodbye! Best of luck with your queries on Omar Harradi's professional background."
-        ]
-      },
-      {
-        "tag": "introduction",
-        "patterns": [
-          "Who is Omar Harradi?",
-          "Tell me about Omar",
-          "Can you introduce Omar?",
-          "Who is this chatbot about?"
-        ],
-        "responses": [
-          "Omar Harradi is a data science enthusiast pursuing his Master’s in Big Data and Business Analytics at IE School of Science and Technology. He has a strong background in data analysis, machine learning, and developing innovative projects like trading bots and large language models.",
-          "Omar is a data scientist with experience in Python, SQL, and advanced machine learning techniques. He’s currently pursuing a Master's in Big Data and Business Analytics and has worked on notable projects like customer churn prediction and building custom LLMs.",
-          "Omar Harradi is passionate about data science, with a strong foundation in business administration and data analysis. He’s quick to adapt to new tools and environments and excels under pressure."
-        ]
-      },
-      {
-        "tag": "experience",
-        "patterns": [
-          "What experience does Omar have?",
-          "Tell me about Omar's work experience",
-          "Where has Omar worked?",
-          "What are Omar's past jobs?"
-        ],
-        "responses": [
-          "Omar Harradi has interned as a Data Scientist at Rutopía and Mogu. At Rutopía, he built a custom Large Language Model using OpenAI’s technology and automated data processes, while at Mogu, he developed a machine learning model to predict customer churn with a precision of 92%, boosting retention by 30%.",
-          "Omar's professional experience includes working as a Data Scientist intern for Rutopía and Mogu, where he focused on building machine learning models, automating data pipelines, and improving data-driven decision-making.",
-          "Omar has applied his data science skills in internships at Rutopía and Mogu. He worked on various projects, from developing customer churn models to creating language models for improved data retrieval and decision-making."
-        ]
-      },
-      {
-        "tag": "skills",
-        "patterns": [
-          "What are Omar's skills?",
-          "Tell me about Omar's technical skills",
-          "What tools does Omar use?",
-          "What programming languages does Omar know?"
-        ],
-        "responses": [
-          "Omar Harradi is proficient in Python, SQL, Linux, R, PowerBI, and Azure. He also has strong expertise in machine learning, deep learning, and statistics. His hands-on experience includes developing trading bots, building LLMs, and creating PowerBI dashboards.",
-          "Omar is skilled in Python, SQL, machine learning, deep learning, and data analytics tools like PowerBI. He’s comfortable working with cloud platforms such as Azure and AWS, and he’s continually learning to improve his AI and data science knowledge.",
-          "Omar's technical skills include Python, SQL, PowerBI, and Azure, alongside his expertise in machine learning, deep learning, and data analysis. He has also worked with Linux, R, and cloud platforms like AWS."
-        ]
-      },
-      {
-        "tag": "education",
-        "patterns": [
-          "What is Omar's educational background?",
-          "Where did Omar study?",
-          "Tell me about Omar's education",
-          "What degrees does Omar have?"
-        ],
-        "responses": [
-          "Omar Harradi is pursuing a Master's in Big Data and Business Analytics at IE School of Science and Technology, Madrid, expected to be completed by July 2025. He also completed a Bachelor of Business Administration with a focus on data analysis, graduating in 2024.",
-          "Omar holds a Bachelor’s degree in Business Administration from IE Business School, specializing in data analysis. Currently, he’s pursuing a Master’s in Big Data and Business Analytics at IE School of Science and Technology.",
-          "Omar has a strong educational foundation, with a Bachelor of Business Administration from IE Business School and ongoing Master’s studies in Big Data and Business Analytics at IE School of Science and Technology."
-        ]
-      },
-      {
-        "tag": "projects",
-        "patterns": [
-          "What projects has Omar worked on?",
-          "Tell me about Omar's projects",
-          "What are Omar's key projects?",
-          "Has Omar worked on any interesting projects?"
-        ],
-        "responses": [
-          "Omar has worked on various impactful projects, including developing a customer churn prediction model for Mogu, which improved retention rates by 30%, and building a custom Large Language Model (LLM) for Rutopía to streamline data retrieval.",
-          "Omar's notable projects include creating a trading bot using machine learning and developing a PowerBI dashboard for Mogu's sales team. He also won a consultancy challenge with Xiaomi for an innovative electric vehicle strategy.",
-          "Omar’s projects range from machine learning models for customer churn prediction to building LLMs and advanced trading bots. His contributions have improved retention rates and helped companies make more informed data-driven decisions."
-        ]
-      },
-      {
-        "tag": "languages",
-        "patterns": [
-          "What languages does Omar speak?",
-          "Can Omar speak other languages?",
-          "What languages is Omar fluent in?",
-          "Tell me about Omar's language skills"
-        ],
-        "responses": [
-          "Omar is multilingual, speaking fluent English, French, and Arabic. He also has intermediate proficiency in Spanish.",
-          "Omar speaks English, French, and Arabic fluently, and he is also conversant in Spanish.",
-          "Omar’s language skills include fluency in English, French, and Arabic, and he’s comfortable speaking intermediate Spanish."
-        ]
-      },
-      {
-        "tag": "hobbies",
-        "patterns": [
-          "What are Omar's hobbies?",
-          "What does Omar do in his free time?",
-          "Tell me about Omar's extracurricular activities",
-          "What are Omar's interests?"
-        ],
-        "responses": [
-          "Omar enjoys playing piano with a band as part of the IEU Music Club, where he also helps organize events. He’s passionate about finance, technology, sports, and entrepreneurship. He also volunteers with a Moroccan NGO, helping distribute meals after the Moroccan earthquake.",
-          "In his free time, Omar plays the piano with a band and organizes events for the IEU Music Club. He’s also a volunteer with a Moroccan NGO and has a strong interest in finance, technology, and entrepreneurship.",
-          "Omar is involved in extracurricular activities like playing piano in the IEU Music Club, organizing events, and volunteering with NGOs. His hobbies include finance, technology, and sports."
-        ]
-      }
-    ]
-  }
-  
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "How are you?",
+        "Good day",
+        "Hey"
+      ],
+      "responses": [
+        "Hello! Let me introduce you to Omar Harradi. How can I assist you in learning more about his journey?",
+        "Hi there! Omar Harradi is a passionate data scientist, entrepreneur, and lifelong learner. What would you like to explore today?",
+        "Greetings! I’m here to help you discover Omar Harradi’s skills, achievements, and projects. How can I assist?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Feel free to reach out again if you want to learn more about Omar Harradi's background.",
+        "See you later! Don't hesitate to return for more details on Omar’s work, skills, and projects.",
+        "Goodbye! Best of luck with your queries about Omar Harradi’s career and achievements."
+      ]
+    },
+    {
+      "tag": "introduction",
+      "patterns": [
+        "Who is Omar Harradi?",
+        "Tell me about Omar",
+        "Can you introduce Omar?",
+        "Who is this chatbot about?"
+      ],
+      "responses": [
+        "Omar Harradi is an aspiring data scientist currently pursuing a Master's in Big Data and Business Analytics at IE School of Science and Technology. He has a diverse background in data analysis, machine learning, and business strategy, coupled with hands-on experience in building trading bots and AI models.",
+        "Omar Harradi is a data scientist with experience in Python, SQL, and machine learning. He has a passion for finance, technology, and entrepreneurship, and he’s currently furthering his education in Big Data and Business Analytics. He has worked on projects ranging from customer churn prediction models to large language models (LLMs).",
+        "Omar Harradi is an enthusiastic data scientist with a strong foundation in data analysis, business strategy, and machine learning. With a Bachelor’s in Business Administration and an ongoing Master's in Big Data and Business Analytics, he’s well-versed in data-driven decision-making and innovation."
+      ]
+    },
+    {
+      "tag": "experience",
+      "patterns": [
+        "What experience does Omar have?",
+        "Tell me about Omar's work experience",
+        "Where has Omar worked?",
+        "What are Omar's past jobs?"
+      ],
+      "responses": [
+        "Omar Harradi has interned as a Data Scientist at Rutopía and Mogu. At Rutopía, he played a key role in building a custom Large Language Model (LLM) using OpenAI’s technology to streamline data processes. At Mogu, he developed a machine learning model for customer churn prediction with 92% accuracy, which significantly boosted customer retention by 30%.",
+        "Omar’s experience spans across data science internships at Rutopía and Mogu, where he focused on creating predictive models, automating data pipelines, and improving business outcomes through data-driven insights. His work has directly impacted customer retention and process automation.",
+        "Omar has a wealth of experience in data science, with roles at Rutopía and Mogu where he contributed to significant projects such as customer churn prediction models, developing custom AI solutions, and building data infrastructure to improve operational efficiency."
+      ]
+    },
+    {
+      "tag": "skills",
+      "patterns": [
+        "What are Omar's skills?",
+        "Tell me about Omar's technical skills",
+        "What tools does Omar use?",
+        "What programming languages does Omar know?"
+      ],
+      "responses": [
+        "Omar Harradi is proficient in Python, SQL, and machine learning libraries such as TensorFlow, Keras, and Scikit-learn. He has hands-on experience with cloud platforms like AWS and Azure, and he’s skilled in data analysis, business intelligence using PowerBI, and Linux-based systems.",
+        "Omar’s technical toolkit includes Python, SQL, R, PowerBI, and machine learning algorithms. He’s adept at data preprocessing, building predictive models, and deploying AI solutions on cloud platforms like AWS and Azure.",
+        "Omar has extensive experience in Python, SQL, and machine learning frameworks. He’s well-versed in data science techniques, deep learning models, and analytics tools like PowerBI and Azure. He’s also familiar with Linux environments and cloud computing for large-scale data analysis."
+      ]
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "What is Omar's educational background?",
+        "Where did Omar study?",
+        "Tell me about Omar's education",
+        "What degrees does Omar have?"
+      ],
+      "responses": [
+        "Omar Harradi is currently pursuing a Master’s in Big Data and Business Analytics at IE School of Science and Technology, where he’s deepening his expertise in advanced data analytics, machine learning, and business strategy. He also holds a Bachelor’s degree in Business Administration, which gives him a solid understanding of business processes and data-driven decision-making.",
+        "Omar holds a Bachelor’s degree in Business Administration from IE Business School, specializing in data analysis. He is also pursuing his Master’s in Big Data and Business Analytics at IE School of Science and Technology, focusing on leveraging data for business impact.",
+        "Omar’s educational background includes a Bachelor’s in Business Administration and ongoing Master’s studies in Big Data and Business Analytics, giving him a unique blend of business acumen and technical data science skills."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "What projects has Omar worked on?",
+        "Tell me about Omar's projects",
+        "What are Omar's key projects?",
+        "Has Omar worked on any interesting projects?"
+      ],
+      "responses": [
+        "Omar’s key projects include building a customer churn prediction model for Mogu, which improved customer retention rates by 30%, and developing a custom Large Language Model (LLM) for Rutopía, automating data retrieval processes. Additionally, he created a machine learning-driven trading bot that achieved a 15% return.",
+        "Omar has worked on impactful projects like a trading bot that uses advanced machine learning techniques to optimize trading strategies, and a PowerBI dashboard for Mogu’s sales team, which improved business insights and decision-making.",
+        "Omar’s project portfolio includes creating predictive models for customer retention, developing LLMs for enhanced data processing, and implementing business intelligence solutions that have contributed to the success of companies like Rutopía and Mogu."
+      ]
+    },
+    {
+      "tag": "languages",
+      "patterns": [
+        "What languages does Omar speak?",
+        "Can Omar speak other languages?",
+        "What languages is Omar fluent in?",
+        "Tell me about Omar's language skills"
+      ],
+      "responses": [
+        "Omar Harradi is fluent in English, French, and Arabic, with intermediate proficiency in Spanish. His multilingual abilities allow him to work effectively in diverse teams and global environments.",
+        "Omar speaks English, French, and Arabic fluently, and he has conversational skills in Spanish. This language proficiency helps him collaborate across cultures and contribute to international projects.",
+        "Omar is fluent in English, French, and Arabic, and can communicate effectively in Spanish. His ability to speak multiple languages enhances his versatility in both academic and professional settings."
+      ]
+    },
+    {
+      "tag": "hobbies",
+      "patterns": [
+        "What are Omar's hobbies?",
+        "What does Omar do in his free time?",
+        "Tell me about Omar's extracurricular activities",
+        "What are Omar's interests?"
+      ],
+      "responses": [
+        "Omar enjoys playing the piano and is part of a band at the IEU Music Club, where he also helps organize events. He has a passion for finance, technology, sports, and entrepreneurship. He also volunteers with a Moroccan NGO, helping distribute meals after natural disasters, including the recent Moroccan earthquake.",
+        "In his free time, Omar plays the piano with his band at the IEU Music Club and helps coordinate music events. He’s passionate about finance and entrepreneurship and enjoys staying updated on technology trends. He’s also an active volunteer with a Moroccan NGO, contributing to community welfare.",
+        "Omar’s interests include music, finance, and technology. He plays the piano in a band and organizes events for the IEU Music Club. He also enjoys entrepreneurship and giving back to the community by volunteering with NGOs in Morocco."
+      ]
+    },
+    {
+      "tag": "achievements",
+      "patterns": [
+        "What are Omar's achievements?",
+        "Tell me about Omar's awards",
+        "Has Omar won any challenges?",
+        "What accomplishments has Omar made?"
+      ],
+      "responses": [
+        "Omar won a consultancy challenge with Xiaomi by recommending a creative and innovative strategy for the entry of their electric vehicle into the European market. His strategy stood out for its feasibility and market impact.",
+        "Omar achieved a significant milestone by building a machine-learning-powered trading bot that reached an all-time high return of 15%. His bot combines cutting-edge technology with financial insights to optimize trading decisions.",
+        "Omar's achievements include winning the Xiaomi consultancy challenge for EV strategy, increasing customer retention by 30% at Mogu through his churn prediction model, and developing a high-performing trading bot."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact Omar?",
+        "What is Omar's email?",
+        "How can I reach out to Omar?",
+        "Can I contact Omar?"
+      ],
+      "responses": [
+        "You can reach Omar Harradi via email at oharradi.ieu2024@student.ie.edu. Feel free to connect with him for collaboration or professional opportunities!",
+        "To contact Omar, you can send an email to oharradi.ieu2024@student.ie.edu. He’s open to discussing new ideas, projects, or opportunities."
+      ]
+    },
+    {
+      "tag": "fun_fact",
+      "patterns": [
+        "Tell me a fun fact about Omar",
+        "What's something unique about Omar?",
+        "Does Omar have any quirky skills?"
+      ],
+      "responses": [
+        "Did you know Omar once built a trading bot that reached an all-time high of 15% profit? That’s how he combines his passion for finance and machine learning!",
+        "Fun fact: Omar plays the piano with a band in his free time and has been known to rock a keyboard in both coding and music!",
+        "Omar is a jack of many trades—apart from his data science skills, he’s a piano player, entrepreneur, and tech enthusiast!"
+      ]
+    },
+    {
+      "tag": "random_question",
+      "patterns": [
+        "Ask Omar something random",
+        "What would Omar do if he wasn't a data scientist?",
+        "Does Omar have any hidden talents?"
+      ],
+      "responses": [
+        "If Omar weren’t a data scientist, he might be running his own startup—he’s really passionate about entrepreneurship!",
+        "Omar's hidden talent? He can organize events like a pro! He helps run music events at the IEU Music Club.",
+        "Fun fact: Omar has a deep interest in philosophy. He loves exploring how critical thinking can impact data analysis."
+      ]
+    },
+    {
+      "tag": "recruiter_tip",
+      "patterns": [
+        "What's Omar's biggest strength?",
+        "What sets Omar apart?",
+        "Why should we hire Omar?"
+      ],
+      "responses": [
+        "Omar’s biggest strength is his adaptability. He excels at learning new tools and solving complex problems, whether in data science or entrepreneurship.",
+        "What sets Omar apart is his unique combination of business acumen and technical skills. He can look at data problems from both a strategic and an analytical perspective.",
+        "Omar stands out because he is not just a data scientist, but also a natural problem-solver and team player. His experience spans machine learning, business strategy, and even event organization!"
+      ]
+    },
+    {
+      "tag": "vision_for_future",
+      "patterns": [
+        "What's Omar's goal for the future?",
+        "Where does Omar see himself in 5 years?",
+        "What does Omar want to achieve?"
+      ],
+      "responses": [
+        "Omar aims to leverage his skills in AI and machine learning to create innovative solutions that have a global impact. In 5 years, he sees himself leading data-driven projects at the intersection of technology and business.",
+        "Omar’s future goal is to continue developing cutting-edge AI solutions that push boundaries, while also mentoring the next generation of data scientists.",
+        "Omar envisions himself contributing to innovative AI technologies, perhaps in a role where he bridges the gap between technical teams and business leaders."
+      ]
+    }    
+  ]
+}

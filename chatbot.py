@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Embedding, GlobalAveragePooling1D
+from tensorflow.keras.layers import Dense, Embedding, GlobalAveragePooling1D, LSTM, Dropout
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
@@ -50,19 +50,33 @@ sequences = tokenizer.texts_to_sequences(training_sentences)
 padded_sequences = pad_sequences(sequences, truncating='post', maxlen=max_len)
 
 
-
 model = Sequential()
+# Embedding layer to turn words into vectors
 model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
+
+# LSTM layer to capture context in sequences
+model.add(LSTM(64, return_sequences=True))
+
+# A GlobalAveragePooling1D to reduce the dimensionality
 model.add(GlobalAveragePooling1D())
-model.add(Dense(16, activation='relu'))
-model.add(Dense(16, activation='relu'))
+
+# Dense layer with more units for better learning
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.2))
+
+# Another dense layer for deeper learning
+model.add(Dense(32, activation='relu'))
+model.add(Dense(32, activation='relu'))
+
+
+# Output layer for classification
 model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss='sparse_categorical_crossentropy', 
               optimizer='adam', metrics=['accuracy'])
 
 model.summary()
-epochs = 500
+epochs = 700
 history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
 
 

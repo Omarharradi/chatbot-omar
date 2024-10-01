@@ -1,7 +1,4 @@
-<video width="720" height="480" controls autoplay loop>
-  <source src="videos/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Chatbot Demo](videos/video.gif)
 
 
 

@@ -1,11 +1,12 @@
-<video width="720" height="480" controls autoplay loop>
-  <source src="videos/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+# Deep Learning Chatbot 
 
 
 
-# Deep Learning Chatbot
+![Chatbot Demo](videos/video.gif)
+
+
+
+
 
 Welcome to the **Deep Learning Chatbot** project! This chatbot is designed to answer questions about my professional experience, skills, and more. It uses a deep learning model trained on various intents to provide relevant responses.
 

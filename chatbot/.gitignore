@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Model and tokenizer files
+*.h5
+*.pickle
+
+# JSON files that shouldn't be public
+intents.json
+
+# Logs and other temporary files
+*.log
